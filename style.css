@@ -1,0 +1,52 @@
+body  {
+    background-image: url(imagens/central.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.musica {
+    position: relative;
+    left: 820px;
+    width: 250px;
+}
+
+.ano {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 280px;
+}
+
+.sinopse {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    width: 280px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+img {
+    height: 450px;
+    width: 280px; 
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    place-content: center;
+    margin-top: 100px;
+}
+
+.container:hover > :not(:hover) {
+    scale: 0.9; /*diminui a imagem*/
+    opacity: 0.3; /*tira a cor*/
+}
+
+.item {
+    transition: .5s;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
